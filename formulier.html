@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="all.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row content-wrapper">
+        <div class="logo col-12 col-sm-6 col-md-3"><img src="assets/images/logo.png" alt="Procornea logo"></div>
+        <div class="content-container col-md-12 col-lg-6">
+          <div class="row">
+            <div class="title col-md-12">
+              <h1>Ik kijk verder</h1>
+            </div>
+          </div>
+          <form id="subsribe-form" action="mailer.php" method="post">
+            <div class="row">
+              <div class="form-content col-md-6">
+                <div class="form-group row">
+                  <label class="col-4" for="voornaam">Voornaam*</label>
+                  <input class="col-8" id="voornaam" type="text" name="voornaam">
+                </div>
+                <div class="form-group row">
+                  <label class="col-4" for="achternaam">Achternaam*</label>
+                  <input class="col-8" id="achternaam" type="text" name="achternaam">
+                </div>
+                <div class="form-group row">
+                  <label class="col-4" for="naam_praktijk">Naam praktijk*</label>
+                  <input class="col-8" id="naam_praktijk" type="text" name="naam_praktijk">
+                </div>
+                <div class="form-group row">
+                  <label class="col-4" for="plaats_praktijk">Plaats praktijk*</label>
+                  <input class="col-8" id="plaats_praktijk" type="text" name="plaats_praktijk">
+                </div>
+                <div class="form-group row">
+                  <label class="col-4" for="telefoonnummer">Telefoonnummer*</label>
+                  <input class="col-8" id="telefoonnummer" type="text" name="telefoonnummer">
+                </div>
+                <div class="form-group row">
+                  <label class="col-4" for="emailadres">Emailadres*</label>
+                  <input class="col-8" id="emailadres" type="email" name="emailadres">
+                </div>
+              </div>
+              <div class="form-content col-md-6">
+                <div class="form-group row">
+                  <label class="col-4" for="opmerking">Opmerking</label>
+                  <textarea class="col-8" id="opmerking" name="opmerking" rows="3"></textarea>
+                </div>
+                <div class="form-check-container">
+                  <div class="form-check row">
+                    <input class="form-check-input" id="check-information" type="checkbox" name="check-information">
+                    <label class="form-check-label col-12">Ik wil graag meer informatie ontvangen over myopie management in de praktijk</label>
+                  </div>
+                  <div class="form-check row">
+                    <input class="form-check-input" id="check-seminar" type="checkbox" name="check-seminar">
+                    <label class="form-check-label col-12">Ik ben geïnteresseerd in een Myopie Management seminar</label>
+                  </div>
+                  <div class="form-check row">
+                    <input class="form-check-input" id="check-accountmanager" type="checkbox" name="check-accountmanager">
+                    <label class="form-check-label col-12">Ik wil graag een afspraak inplannen met mijn Procornea Accountmanager</label>
+                  </div>
+                  <div class="form-check row">
+                    <input class="form-check-input" id="check-belafspraak" type="checkbox" name="check-belafspraak">
+                    <label class="form-check-label col-12">Graag plan ik een belafspraak in met de Helpdesk van Procornea</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 form-send">
+                  <button type="submit">Verstuur</button>
+                  <p class="discription">Door op ‘Verstuur’ te klikken verklaart u dat u boven de 16 jaar bent en gaat u akkoord met het opslaan en verwerken van de door u opgegeven persoonsgegevens door Procornea Nederland B.V. Procornea Nederland B.V. gebruikt deze gegevens enkel met het doel om aan de door u aangevinkte actie m.b.t. myopie management te voldoen. Dat wil zeggen; het toezenden van meer informatie, een afspraak inplannen met één van onze medewerkers of het noteren als geïnteresseerde voor het Myopie Management seminar. Deze gegevens worden bewaard zolang deze actie van kracht is. U kunt te allen tijde uw gegevens laten verwijderen door een bericht te sturen naar info@procornea.nl.</p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="payoff col-12 col-sm-6 col-md-3">
+          <p class="payoff-text">Kies voor myopie management.</p>
+          <p class="payoff-text payoff-text__big">Kijk verder</p>
+        </div>
+      </div>
+      <div class="row footer">
+        <div class="footer col-12"></div>
+      </div>
+    </div>
+  </body><script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+</html>
